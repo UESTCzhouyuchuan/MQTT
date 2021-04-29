@@ -1,0 +1,24 @@
+{
+  "name": "visualization-system-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pm2 start ecosystem.config.js --only  MQTT-produ",
+    "dev": "pm2-runtime start ecosystem.config.js --only  MQTT-dev",
+    "prettier": "prettier --write \"./**/*.?(ts|tsx|js|less|css|jsx|html|json)\"",
+    "prettier:fix": "prettier --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.45.0",
+    "assert": "^2.0.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongodb": "^3.6.5",
+    "mqtt": "^4.2.6",
+    "websocket-stream": "^5.5.2"
+  }
+}
